@@ -1,0 +1,128 @@
+/* 
+Web developer : Youssef Abdelzaher
+Develop date : 25/7/2021 
+*/
+.navbar{
+    padding: 15px 0px;
+    @include transitionease();
+    position: fixed;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    z-index: 99;
+
+    &.active{
+        background-color: $lastColor;
+        padding: 10px 0px;
+        box-shadow: 0px 2px 15px -5px #000;
+    }
+    .logo{
+        img{
+            width: 80%;
+            cursor: pointer;
+        }
+    }
+    .call-info{
+        font-family: arial;
+        font-weight: bold;
+        a{
+            position: relative;
+            top: 5px;
+            text-decoration: none;
+            color: $mainColor;
+        }
+    }
+    .links{
+        a{
+            text-decoration: none;
+            color: $mainColor;
+            letter-spacing: 2px;
+            padding: 0px 20px;
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+
+    .bars{
+        button{
+            position: absolute;
+            top: 50%;
+            right:15px;
+            font-size: 25px;
+            color:$mainColor;
+            @include transitionease();
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            &:hover{
+                color: #fff;
+            }
+            &:focus{
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+.links-m{
+    position: fixed;
+    width: 30%;
+    height:100%;
+    left:0%;
+    top:0%;
+    padding: 10px 0px 0px 10px;
+    background-color: $lastColor;
+    font-size: 24px;
+    z-index: 101;
+    transform: translateX(-100%);
+    @include transitionease();
+    @media (max-width:768px) {
+        width: 80%;
+    }
+    
+    &.active{
+        transform: translateX(0%);
+    }
+
+    a{
+        display: block;
+        margin-bottom:20px;
+        text-decoration: none;
+        font-weight:bold;
+        color:$mainColor;
+        @include transitionease();
+
+        &:hover{
+            color: #fff;
+        }
+
+        .icon{
+            margin-right:5px
+        }
+    }
+    .call-info{
+        font-family: arial;
+        margin-top: 20px;
+        a{
+            display: inline-block;
+            position: relative;
+            top: 5px;
+            text-decoration: none;
+            color: $mainColor;
+            font-size: 18px;
+        }
+        @media (max-width:575px) {
+            text-align: center;
+
+            img{}
+            a{
+                display: block;
+                margin-top: 10px;
+            }
+        }
+    }
+
+}

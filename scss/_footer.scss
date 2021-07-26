@@ -1,0 +1,87 @@
+.footer{
+    padding: $padding 0px;
+    background-image: url(../imgs/footer/background.jpg);
+    background-size: cover;
+    .logo{
+        margin-bottom: 30px;
+        img{
+            width: 30%;
+            @media (max-width:768px) {
+                width: 40%;
+            }
+        }
+    }
+    p{
+        font-size: 18px;
+        font-family: arial;
+        color: #d1d1d1;
+        margin-bottom: 30px;
+    }
+    .email-location{
+        padding-left: 10%;
+        color:#fff;
+        @media (max-width:768px) {
+            padding-left: 10px;
+        }
+        .location{
+            .icon{
+                margin-right: 10px;
+                font-size: 25px;
+            }
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .email{
+            .icon{
+                margin-right: 10px;
+                font-size: 20px;
+            }
+            font-size: 20px;
+        }
+    }
+    .copyRight{
+        padding-top: $padding;
+        .text{
+            font-size: 18px;
+            color:#d1d1d1;
+            line-height: 35px;
+            @media (max-width:575px) {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+        }
+        .follow{
+            text-align: right;
+            @media (max-width:575px) {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .icon{
+                position: relative;
+                width: 35px;
+                height: 35px;
+                background-color: #fff;
+                color: $mainColor;
+                font-size: 20px;
+                border-radius: 50%;
+                @include transitionease();
+                margin: 0px 5px;
+                cursor: pointer;
+                &:hover{
+                    background-color: $lastColor;
+                }
+                .i{
+                    position: absolute;
+                    top:50%;
+                    left:50%;
+                    -webkit-transform: translate(-50%,-50%);
+                    -moz-transform: translate(-50%,-50%);
+                    -o-transform: translate(-50%,-50%);
+                    -ms-transform: translate(-50%,-50%);
+                    transform: translate(-50%,-50%);
+                }
+            }
+        }
+    }
+}

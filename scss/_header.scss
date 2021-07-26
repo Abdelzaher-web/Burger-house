@@ -1,0 +1,57 @@
+/* 
+Web developer : Youssef Abdelzaher
+Develop date : 25/7/2021 
+*/
+.header{
+    padding: $padding 0px;
+    padding-top: $padding*2+20;
+    background-image: url(../imgs/header/background.jpg);
+    background-size: cover;
+
+    &::before{
+        content:"";
+        position: absolute;
+        top:0px;
+        right:0px;
+        width:50%;
+        height:100%;
+        background-image: url(../imgs/header/effect.png);
+        background-repeat:no-repeat;
+        background-position: 40% 50%;
+        z-index: 1;
+        @media (max-width:992px) {
+            background-position: 10% 202%;
+        }
+    }
+
+    .text{
+        .sign-board{
+            padding: 5px 10px;
+            color: $mainColor;
+            border:2px dashed $mainColor;
+            margin-bottom: 10px;
+        }
+        h1{
+            font-family: h1Font;
+            color: $mainColor;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: 2px 2px #fff;
+            span{
+                font-size: 55pt;
+                @media (max-width:575px) {
+                    font-size: 40pt;
+                }
+            }
+        }
+    }
+    .img{
+        position: relative;
+        
+        img{
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+    }
+}

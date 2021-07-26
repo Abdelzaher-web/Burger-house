@@ -1,0 +1,57 @@
+/* 
+Web developer : Youssef Abdelzaher
+Develop date : 25/7/2021 
+*/
+.slider{
+    padding: $padding 0px;
+    .row{
+        box-shadow: 11px 11px 35px -5px #aaa;
+        border-radius: 5px;
+        padding: 15px 0px;
+        #my-slider{
+            .controls{
+                position: absolute;
+                bottom: 0px;
+                left:0px;
+                justify-content: left;
+                margin: 0px;
+                padding-left: 10px;
+                button{
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: #dcdcdc;
+                    margin: 0px 5px;
+                    @include transitioneaseInout();
+                    &.active{
+                        background-color: $lastColor;
+                    }
+                }
+            }
+            h1{
+                color: $mainColor;
+                font-family: h1Font;
+                text-transform:uppercase;
+                margin-bottom: 30px;
+                span{
+                    font-family: mainFont;
+                    font-size: 30px;
+                }
+            }
+            .item{
+                color: #3d3d3d;
+                font-size: 18px;
+                font-family:arial;
+                padding: 20px 0px;
+                margin-bottom: 20px;
+                
+    
+            }
+        }
+        .img{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

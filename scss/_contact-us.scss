@@ -1,0 +1,71 @@
+/* 
+Web developer : Youssef Abdelzaher
+Develop date : 25/7/2021 
+*/
+.contact-us{
+    padding:$padding 0px;
+    position: relative;
+    h1{
+        text-align: center;
+        color: $mainColor;
+        font-family: h1Font;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        span{
+            font-size: 30px;
+            font-family: mainFont;
+        }
+    }
+    .form{
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        input{
+            width: 90%;
+            outline: none;
+            border:2px solid #aaa;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            @include transitionease();
+            &:focus{
+                border-color: $lastColor;
+                box-shadow: 0px 0px 10px -2px $lastColor;
+                color: $mainColor;
+                column-count: $mainColor;
+                &::placeholder{
+                    color:$lastColor
+                }
+            }
+
+            &.button{
+                font-size: 20px;
+                font-family: h1Font;
+                border-color: #df1c1c;
+                background-color: #df1c1c;
+                color:#fff;
+                text-transform: uppercase;
+                @include transitionease();
+                &:hover{
+                    background-color: $lastColor;
+                    border-color: $lastColor;
+                }
+            }
+        }
+    }
+    .top{
+        position: absolute;
+        left:0px;
+        top:0px;
+        width: 15%;
+        z-index: 1;
+    }
+    .bottom{
+        position: absolute;
+        right:0px;
+        bottom:0px;
+        width: 15%;
+        z-index: 1;
+    }
+}
