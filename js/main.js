@@ -21,6 +21,8 @@ $(document).ready(()=>{
         },100)
     })
 
+    $(".header").css("height",$(window).innerHeight())
+
     // Add links-m  and overay and close button
     $(".navbar .bars").click(()=>{
         // Add overlay 

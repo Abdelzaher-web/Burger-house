@@ -198,6 +198,8 @@ Develop date : 25/7/2021
 @media (max-width: 992px) {
   .header::before {
     background-position: 10% 202%; } }
+.header .text {
+  padding-top: 20%; }
 .header .text .sign-board {
   padding: 5px 10px;
   color: #3d2514;
@@ -215,7 +217,8 @@ Develop date : 25/7/2021
   .header .text h1 span {
     font-size: 40pt; } }
 .header .img {
-  position: relative; }
+  position: relative;
+  padding-top: 10%; }
 .header .img img {
   width: 100%;
   position: relative;
